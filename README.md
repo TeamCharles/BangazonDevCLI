@@ -1,5 +1,7 @@
 # Bangazon Developer CLI
 
+![Bangazon CLI](https://i.imgur.com/eHFuzmy.png)
+
 ## Installation
 
 Download the Bash script inside this repo to your machine and save it in your Bangazon directory (recommended).
