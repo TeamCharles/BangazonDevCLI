@@ -9,7 +9,7 @@ Clone this repository into a your `Bangazon` directory:
 ```sh
 mkdir BangazonDevCLI
 git clone git@github.com:TeamCharles/BangazonDevCLI.git BangazonDevCLI
-``
+```
 
 Open your `~/.zshrc` file and create an alias that links to the Bash script like so:
 
