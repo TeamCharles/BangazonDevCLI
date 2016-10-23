@@ -1,6 +1,6 @@
 # Bangazon Developer CLI
 
-![Bangazon CLI](https://i.imgur.com/eHFuzmy.png)
+![Bangazon CLI](https://i.imgur.com/CVv004t.png)
 
 ## Installation
 
