@@ -22,6 +22,7 @@ Your `Bangazon` or `TeamCharles` directory should look like this:
    |
    |- user-auth/
    |
+   |- other future project/
   ...
 ```
 
