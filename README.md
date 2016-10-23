@@ -11,6 +11,20 @@ mkdir BangazonDevCLI
 git clone git@github.com:TeamCharles/BangazonDevCLI.git BangazonDevCLI
 ```
 
+Your `Bangazon` or `TeamCharles` directory should look like this:
+
+```
+ \- Bangazon/
+  \
+   |- BangazonDevCli/
+   |
+   |- initial-site/
+   |
+   |- user-auth/
+   |
+  ...
+```
+
 Open your `~/.zshrc` file and create an alias that links to the Bash script like so:
 
 `alias bangazon="bash PATH/TO/BangazonDevCLI/bangazonDevCLI.sh"`
