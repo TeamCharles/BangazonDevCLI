@@ -4,12 +4,15 @@
 
 ## Installation
 
-Download the Bash script inside this repo to your machine and save it in your Bangazon directory (recommended).
+Clone this repository into a your `Bangazon` directory:
 
-Open the script in a text editor and update the `PATH/TO/DATABASE.DB` line. Save the changes.
+```sh
+mkdir BangazonDevCLI
+git clone git@github.com:TeamCharles/BangazonDevCLI.git BangazonDevCLI
+``
 
 Open your `~/.zshrc` file and create an alias that links to the Bash script like so:
 
-`alias bangazon="bash PATH/TO/bangazonDevCLI.sh"`
+`alias bangazon="bash PATH/TO/BangazonDevCLI/bangazonDevCLI.sh"`
 
 Restart your terminal and run `bangazon` to show available commands.

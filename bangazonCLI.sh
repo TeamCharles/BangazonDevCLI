@@ -10,7 +10,6 @@ if [[ "$database" == "" ]]; then
   done
   echo $database >> ../BangazonDevCLI/FILE_LOCATIONS
 fi
-echo $database
 export ASPNETCORE_ENVIRONMENT="Development"
 export BangazonWeb_Db_Path=$database
 if [[ $# -eq 0 ]]; then
@@ -24,7 +23,8 @@ if [[ $# -eq 0 ]]; then
   echo -e "Current database location: $(tput setaf 5)$database$(tput sgr0)\n
     $(tput bold)bangazon run$(tput sgr0)\t Run the project\n
     $(tput bold)bangazon migration$(tput sgr0)\t Update the database with new migrations\n
-    $(tput bold)bangazon restore$(tput sgr0)\t Restore .NET Core and front-end dependencies."
+    $(tput bold)bangazon restore$(tput sgr0)\t Restore .NET Core and front-end dependencies\n
+    $(tput bold)bangazon reset$(tput sgr0)\t Change the location of your database"
   exit 1
 elif [ "$1" == "run" ]; then
   open -a 'Google Chrome' 'http://localhost:5000'
