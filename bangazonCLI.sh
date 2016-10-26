@@ -33,7 +33,7 @@ elif [ "$1" == "restore" ]; then
   dotnet restore
   dotnet ef database update
   bower install
-  open -a 'Google Chrome' 'http://localhost:5000'
+  open -a 'Google Chrome Canary' 'http://localhost:5000'
   dotnet run
 elif [ "$1" == "migration" ]; then
   rm $database
@@ -42,7 +42,7 @@ elif [ "$1" == "migration" ]; then
   dotnet ef database update
   dotnet restore
   bower install
-  open -a 'Google Chrome' 'http://localhost:5000'
+  open -a 'Google Chrome Canary' 'http://localhost:5000'
   dotnet run
 elif [ "$1" == "reset" ]; then
   rm $database
