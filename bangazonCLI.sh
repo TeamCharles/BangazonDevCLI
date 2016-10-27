@@ -24,7 +24,7 @@ if [[ $# -eq 0 ]]; then
     $(tput bold)bangazon run$(tput sgr0)\t Run the project\n
     $(tput bold)bangazon migration$(tput sgr0)\t Update the database with new migrations\n
     $(tput bold)bangazon restore$(tput sgr0)\t Restore .NET Core and front-end dependencies\n
-    $(tput bold)bangazon reset$(tput sgr0)\t Change the location of your databas\n
+    $(tput bold)bangazon reset$(tput sgr0)\t Change the location of your database\n
     $(tput bold)bangazon clean$(tput sgr0)\t Delete local merged branches from machine"
 
   exit 1
