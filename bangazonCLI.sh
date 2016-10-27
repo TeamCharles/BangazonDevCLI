@@ -24,7 +24,9 @@ if [[ $# -eq 0 ]]; then
     $(tput bold)bangazon run$(tput sgr0)\t Run the project\n
     $(tput bold)bangazon migration$(tput sgr0)\t Update the database with new migrations\n
     $(tput bold)bangazon restore$(tput sgr0)\t Restore .NET Core and front-end dependencies\n
-    $(tput bold)bangazon reset$(tput sgr0)\t Change the location of your database"
+    $(tput bold)bangazon reset$(tput sgr0)\t Change the location of your databas\n
+    $(tput bold)bangazon clean$(tput sgr0)\t Delete local merged branches from machine"
+
   exit 1
 elif [ "$1" == "run" ]; then
   open -a 'Google Chrome' 'http://localhost:5000'
@@ -44,6 +46,8 @@ elif [ "$1" == "migration" ]; then
   bower install
   open -a 'Google Chrome Canary' 'http://localhost:5000'
   dotnet run
+elif [ "$1" == "clean" ]; then
+  git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d
 elif [ "$1" == "reset" ]; then
   rm $database
   rm ../BangazonDevCLI/FILE_LOCATIONS
