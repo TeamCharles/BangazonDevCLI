@@ -28,6 +28,6 @@ Your `Bangazon` or `TeamCharles` directory should look like this:
 
 Open your `~/.zshrc` file and create an alias that links to the Bash script like so:
 
-`alias bangazon="bash PATH/TO/BangazonDevCLI/bangazonDevCLI.sh"`
+`alias bangazon="bash PATH/TO/BangazonDevCLI/bangazonCLI.sh"`
 
 Restart your terminal and run `bangazon` to show available commands.
